@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mvanwi3\\Downloads\\Microsoft Full Stack\\Back-End Development with .NET\\Writing and Enhancing API Code with Copilot\\UserManagementAPI\\UserManagementAPI\\UserManagementAPI.csproj": {}
+    "C:\\Users\\mvanwi3\\Downloads\\Microsoft Full Stack\\Back-End Development with .NET\\Writing and Enhancing API Code with Copilot\\UserManagementAPI\\UserManagementAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mvanwi3\\Downloads\\Microsoft Full Stack\\Back-End Development with .NET\\Writing and Enhancing API Code with Copilot\\UserManagementAPI\\UserManagementAPI\\UserManagementAPI.csproj": {
+    "C:\\Users\\mvanwi3\\Downloads\\Microsoft Full Stack\\Back-End Development with .NET\\Writing and Enhancing API Code with Copilot\\UserManagementAPI\\UserManagementAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mvanwi3\\Downloads\\Microsoft Full Stack\\Back-End Development with .NET\\Writing and Enhancing API Code with Copilot\\UserManagementAPI\\UserManagementAPI\\UserManagementAPI.csproj",
+        "projectUniqueName": "C:\\Users\\mvanwi3\\Downloads\\Microsoft Full Stack\\Back-End Development with .NET\\Writing and Enhancing API Code with Copilot\\UserManagementAPI\\UserManagementAPI.csproj",
         "projectName": "UserManagementAPI",
-        "projectPath": "C:\\Users\\mvanwi3\\Downloads\\Microsoft Full Stack\\Back-End Development with .NET\\Writing and Enhancing API Code with Copilot\\UserManagementAPI\\UserManagementAPI\\UserManagementAPI.csproj",
+        "projectPath": "C:\\Users\\mvanwi3\\Downloads\\Microsoft Full Stack\\Back-End Development with .NET\\Writing and Enhancing API Code with Copilot\\UserManagementAPI\\UserManagementAPI.csproj",
         "packagesPath": "C:\\Users\\mvanwi3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mvanwi3\\Downloads\\Microsoft Full Stack\\Back-End Development with .NET\\Writing and Enhancing API Code with Copilot\\UserManagementAPI\\UserManagementAPI\\obj\\",
+        "outputPath": "C:\\Users\\mvanwi3\\Downloads\\Microsoft Full Stack\\Back-End Development with .NET\\Writing and Enhancing API Code with Copilot\\UserManagementAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

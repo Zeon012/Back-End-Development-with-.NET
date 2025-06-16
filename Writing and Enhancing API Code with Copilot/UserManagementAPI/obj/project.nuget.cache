@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PrGmKWVo5WE=",
+  "dgSpecHash": "mP0mf2Zur/4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mvanwi3\\Downloads\\Microsoft Full Stack\\Back-End Development with .NET\\Writing and Enhancing API Code with Copilot\\UserManagementAPI\\UserManagementAPI\\UserManagementAPI.csproj",
+  "projectFilePath": "C:\\Users\\mvanwi3\\Downloads\\Microsoft Full Stack\\Back-End Development with .NET\\Writing and Enhancing API Code with Copilot\\UserManagementAPI\\UserManagementAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mvanwi3\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
     "C:\\Users\\mvanwi3\\.nuget\\packages\\microsoft.extensions.apidescription.server\\8.0.0\\microsoft.extensions.apidescription.server.8.0.0.nupkg.sha512",
