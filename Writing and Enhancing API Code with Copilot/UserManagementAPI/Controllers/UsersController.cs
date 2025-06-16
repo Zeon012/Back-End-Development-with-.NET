@@ -15,9 +15,14 @@ namespace UserManagementAPI.Controllers
         };
 
         [HttpGet]
-        public ActionResult<IEnumerable<User>> GetUsers()
+        public ActionResult<IEnumerable<User>> GetUsers([FromQuery] int? page = null, [FromQuery] int? pageSize = null)
         {
-            return Ok(users);
+            IEnumerable<User> result = users;
+            if (page.HasValue && pageSize.HasValue && page > 0 && pageSize > 0)
+            {
+                result = users.Skip((page.Value - 1) * pageSize.Value).Take(pageSize.Value);
+            }
+            return Ok(result);
         }
 
         [HttpGet("{id}")]
@@ -32,16 +37,25 @@ namespace UserManagementAPI.Controllers
         }
 
         [HttpPost]
-        public ActionResult<User> CreateUser(User user)
+        public ActionResult<User> CreateUser([FromBody] User user)
         {
-            user.Id = users.Max(u => u.Id) + 1;
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            user.Id = users.Any() ? users.Max(u => u.Id) + 1 : 1;
+            user.CreatedAt = DateTime.UtcNow;
             users.Add(user);
             return CreatedAtAction(nameof(GetUser), new { id = user.Id }, user);
         }
 
         [HttpPut("{id}")]
-        public ActionResult UpdateUser(int id, User user)
+        public ActionResult UpdateUser(int id, [FromBody] User user)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             var existingUser = users.FirstOrDefault(u => u.Id == id);
             if (existingUser == null)
             {
@@ -49,6 +63,7 @@ namespace UserManagementAPI.Controllers
             }
             existingUser.Name = user.Name;
             existingUser.Email = user.Email;
+            existingUser.Password = user.Password;
             return NoContent();
         }
 
