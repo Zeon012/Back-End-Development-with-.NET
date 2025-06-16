@@ -7,7 +7,15 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Error-handling middleware first
+app.UseMiddleware<ErrorHandlingMiddleware>();
+
+// Authentication middleware next
+app.UseMiddleware<TokenAuthenticationMiddleware>();
+
+// Logging middleware last
+app.UseMiddleware<RequestResponseLoggingMiddleware>();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -15,9 +23,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
