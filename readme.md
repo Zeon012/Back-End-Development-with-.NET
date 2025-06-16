@@ -29,7 +29,7 @@ This project is an ASP.NET Core Web API for managing users. It provides a set of
 
 ## Usage
 
-Once the application is running, you can access the API at `http://localhost:5146`. Use tools like Postman or curl to interact with the API endpoints.
+Once the application is running, you can access the API at `http://localhost:5146` or `https://localhost:7100`. Use tools like Postman or curl to interact with the API endpoints.
 
 ## API Endpoints
 
