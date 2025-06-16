@@ -14,27 +14,22 @@ This project is an ASP.NET Core Web API for managing users. It provides a set of
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
+   git clone https://github.com/Zeon012/Back-End-Development-with-.NET.git
    ```
 
-2. Navigate to the project directory:
-   ```
-   cd UserManagementAPI
-   ```
-
-3. Restore the dependencies:
+2. Restore the dependencies:
    ```
    dotnet restore
    ```
 
-4. Run the application:
+3. Run the application:
    ```
    dotnet run
    ```
 
 ## Usage
 
-Once the application is running, you can access the API at `http://localhost:5146`. Use tools like Postman or curl to interact with the API endpoints.
+Once the application is running, you can access the API at `http://localhost:5146` or `https://localhost:7100`. Use tools like Postman or curl to interact with the API endpoints.
 
 ## API Endpoints
 
