@@ -14,7 +14,7 @@ This project is an ASP.NET Core Web API for managing users. It provides a set of
 
 1. Clone the repository:
    ```
-   git clone <(https://github.com/Zeon012/Back-End-Development-with-.NET/)>
+   git clone (https://github.com/Zeon012/Back-End-Development-with-.NET.git)
    ```
 
 2. Restore the dependencies:
